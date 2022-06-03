@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.header1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: white;
+}
+
+h1{
+    position: relative;
+    left: 7.5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header1 nav{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+.header1 ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.header1 a {
+    color: rgb(37, 36, 36);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.header1 a:hover{
+    color:black;
+    font-weight: bold;
+}
+
+.header1 li{
+    font-size: 20px;
+    list-style: none;
+}
+
+.header1 button{
+    color: white;
+    background: black;
+    width: 150px;
+    border: none;
+    font-size: 25px;
+    display: none;
+    
+}
+
+.laranja{
+    background-image: url(./img/laranja\ azul\ recorte.png);
+    width: 100%;
+    height: 29em;
+    background-size: cover;
+}
+
+.divlaranja{
+    width: 90%;
+    color: white;
+    position: relative;
+    left: 6.0em;
+    top: 10em;
+} 
+
+
+.divlaranja h2{
+    color: white;
+    font-size: 2.6rem;
+}
+
+.divlaranja p{ 
+    color: white;
+    padding-top: 2em;
+    font-size:1.5rem ;
+    margin-left: -2px;
+}
+
+
+
+.galeria{
+    width: 100%;
+    margin-top: 2rem ;
+    margin: 0 auto ;
+}
+
+
+.galeria img{
+    width: 25%;
+    padding: 0.5em;
+    
+}
+.imagens{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2vw;
+  
+}
+footer{
+    width: 100%;
+    padding: 3%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redesocial {
+    display: flex;
+}
+
+.redes{
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.redes img{
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+
+}
+.final{
+    display: flex;
+}
+
+.nocopy{
+    width: 50%;
+    padding:10px;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+.nocopy p{
+    position: relative;
+    left:100px;
+    color:rgba(0, 0, 0, 0.986);
+}
+.nocopy h2{
+    position: relative;
+    left:84px;
+}
+p {
+    margin-left: 2vw;
+    font-weight: 300;
+    width: 60%;
+}
+.btn{
+    align-self: center;
+    display: none;
+}
+.inicio{
+    background:#333333;
+    color:#CCCCCC;
+    padding: 5px 20px;
+    border: none;
+}
+footer{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 935px) {
+    .laranja{
+      width: 100%;
+      height: 40em;
+      background-position-x: 80% ;
+     
+    }
+    .header1 button{
+        display: initial;
+    
+    } 
+
+    .header1 ul{ display: none;
+
+    }
+
+    .imagens{
+        flex-direction: column;
+        padding-left: 80px;
+    }
+
+    .imagens img{
+        width: 80%;
+
+    }
+
+    h1{
+        font-size: 27px;
+    }
+
+.final{
+    flex-direction: column;
+    padding-top: 20px;
+    width: 100%;
+    height: 50%;
+    
+}
+
+.redes{
+    justify-content: center;
+    margin-left: 66px;
+    width: 105%;
+     background: #7FDBD4;
+}
+
+.redesocial{
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes img{
+    width: 30px;
+    margin-left: 15px;
+    
+}
+
+.nocopy{
+ margin-left: 0;
+ flex-direction: column;
+
+}
+
+.redesocial{
+ margin-left: 50px;
+}
+
+.copia{
+    font-size: 15px;
+}
+
+.nocopy p{
+    width: 122%;
+    word-break: break-all;
+    font-size: 10px;
+    margin-left: 0;
+}
+
+.btn{
+    display: initial;
+}
+
+}
+@media (max-width: 490px) {
+    .redes{
+        width: 95%;
+        margin-left: 42px; 
+    }
+    .final{
+        position: relative;
+        right: 66px;
+    }
+    .nocopy h2{
+        position: relative;
+        left: 59px;
+    }
+    .inicio{
+        position: relative;
+        left: 193px;
+        top: -72px;
+    }
+}
